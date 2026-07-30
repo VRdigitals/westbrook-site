@@ -31,6 +31,11 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Deploying to a plain cPanel Node.js host, not Cloudflare — build a standard
+  // Node server instead of the Cloudflare Workers output this config defaults to.
+  nitro: {
+    preset: "node-server",
+  },
   vite: {
     plugins: [stripTsdSourceFromR3F()],
   },
