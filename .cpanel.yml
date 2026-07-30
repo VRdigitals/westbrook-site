@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/westbrookinterna/website/
+    - /bin/bash -c "source /home/westbrookinterna/nodevenv/website/22/bin/activate && cd $DEPLOYPATH && npm install && npm run build"
+    - /bin/mkdir -p $DEPLOYPATH/tmp
+    - /bin/touch $DEPLOYPATH/tmp/restart.txt
