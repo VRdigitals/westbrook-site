@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/westbrookinterna/repositories/westbrook-website/
-    - /bin/bash -c "source /home/westbrookinterna/nodevenv/repositories/westbrook-website/22/bin/activate && cd $DEPLOYPATH && npm install && npm run build"
-    - /bin/mkdir -p $DEPLOYPATH/tmp
-    - /bin/touch $DEPLOYPATH/tmp/restart.txt
+    - /bin/mkdir -p /home/westbrookinterna/website
+    - /bin/cp -a /home/westbrookinterna/repositories/westbrook-website/. /home/westbrookinterna/website/
+    - /bin/bash -c "source /home/westbrookinterna/nodevenv/website/22/bin/activate && cd /home/westbrookinterna/website && npm install && npm run build"
+    - /bin/mkdir -p /home/westbrookinterna/website/tmp
+    - /bin/touch /home/westbrookinterna/website/tmp/restart.txt
