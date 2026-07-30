@@ -3,6 +3,6 @@ deployment:
   tasks:
     - /bin/mkdir -p /home/westbrookinterna/app-westbrook-site
     - /bin/cp -a /home/westbrookinterna/git-westbrook-site/. /home/westbrookinterna/app-westbrook-site/
-    - /bin/bash -c "source /home/westbrookinterna/nodevenv/app-westbrook-site/22/bin/activate && cd /home/westbrookinterna/app-westbrook-site && npm ci && npm run build"
+    - /bin/bash -c "source /home/westbrookinterna/nodevenv/app-westbrook-site/22/bin/activate && cd /home/westbrookinterna/app-westbrook-site && node -v > deploy-node-version.log 2>&1; npm ci > deploy-ci.log 2>&1; npm run build > deploy-build.log 2>&1"
     - /bin/mkdir -p /home/westbrookinterna/app-westbrook-site/tmp
     - /bin/touch /home/westbrookinterna/app-westbrook-site/tmp/restart.txt
