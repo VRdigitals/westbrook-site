@@ -13,15 +13,15 @@ import { SiteNav } from "@/components/SiteNav";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Westbrook Advisory — We Make Your Global Dream Come True" },
+      { title: "Westbrook International — We Make Your Global Dream Come True" },
       {
         name: "description",
         content:
-          "Westbrook Advisory turns the dream of a life abroad into a real, working plan — work visas, student visas, family migration and ethical global recruitment, guided from first call to arrival day.",
+          "Westbrook International turns the dream of a life abroad into a real, working plan — work visas, student visas, family migration and ethical global recruitment, guided from first call to arrival day.",
       },
       {
         property: "og:title",
-        content: "Westbrook Advisory — We Make Your Global Dream Come True",
+        content: "Westbrook International — We Make Your Global Dream Come True",
       },
       {
         property: "og:description",
@@ -61,7 +61,7 @@ function Home() {
           <div className="max-w-3xl">
             <FadeIn delay={200} duration={800}>
               <p className="mb-5 inline-block rounded-md bg-black/45 px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.4em] text-gold backdrop-blur-[2px] md:text-sm">
-                Global Immigration &amp; Visa Advisory
+                Global Immigration &amp; Visa Experts
               </p>
             </FadeIn>
             <AnimatedHeading

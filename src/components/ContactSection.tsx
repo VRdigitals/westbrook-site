@@ -39,7 +39,7 @@ export function ContactSection() {
           description="Whether you're picturing a new country, a bigger career or your whole family together again, the first conversation costs nothing and commits you to nothing. You'll leave it knowing exactly what's possible."
           contactInfo={[
             { icon: MailIcon, label: "Email", value: "info@westbrook.ae" },
-            { icon: PhoneIcon, label: "Phone", value: "+971 4 000 0000" },
+            { icon: PhoneIcon, label: "Phone", value: "+971 54 165 9928" },
             {
               icon: ClockIcon,
               label: "Consultation Hours",
@@ -47,7 +47,7 @@ export function ContactSection() {
             },
             {
               icon: MapPinIcon,
-              label: "Advisory Office",
+              label: "Our Office",
               value:
                 "Office 315, Healthcare City, Umm Hurrair, near Wafi Mall, Dubai",
               className: "sm:col-span-2",

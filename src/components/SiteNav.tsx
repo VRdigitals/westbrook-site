@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/westbrook-logo.png.asset.json";
+import logoUrl from "@/assets/westbrook-logo-horizontal.png";
 import { SERVICES } from "@/data/services";
 
 const LINKS = [
@@ -97,9 +97,9 @@ export function SiteNav() {
       <nav className="liquid-glass flex items-center justify-between rounded-xl px-5 py-3">
         <Link to="/">
           <img
-            src={logoAsset.url}
-            alt="Westbrook Advisory logo"
-            className="h-10 w-auto md:h-12"
+            src={logoUrl}
+            alt="Westbrook International logo"
+            className="h-9 w-auto sm:h-10 md:h-12"
           />
         </Link>
         <div className="hidden items-center gap-8 md:flex">

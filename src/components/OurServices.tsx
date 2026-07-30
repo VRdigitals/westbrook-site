@@ -21,7 +21,7 @@ export function OurServices() {
             delay={200}
           />
           <p className="svc-sub">
-            Comprehensive, legally compliant advisory. Whether you are a professional
+            Comprehensive, legally compliant guidance. Whether you are a professional
             seeking overseas placement or an employer building a global workforce, we
             provide structured guidance at every stage.
           </p>

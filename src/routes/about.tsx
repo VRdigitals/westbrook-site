@@ -11,15 +11,15 @@ import { useInViewRef } from "@/components/useInViewRef";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Westbrook Advisory — We Make Your Global Dream Come True" },
+      { title: "About Westbrook International — We Make Your Global Dream Come True" },
       {
         name: "description",
         content:
-          "Who we are: an advisory built to turn the dream of a life abroad into a real, working plan — verified employers, complete files and honest fees, every step of the way.",
+          "Who we are: an international team built to turn the dream of a life abroad into a real, working plan — verified employers, complete files and honest fees, every step of the way.",
       },
       {
         property: "og:title",
-        content: "About Westbrook Advisory — We Make Your Global Dream Come True",
+        content: "About Westbrook International — We Make Your Global Dream Come True",
       },
       {
         property: "og:description",
@@ -60,7 +60,7 @@ const NUMBERS = [
   { k: "20k+", v: "Verified placements" },
   { k: "18", v: "Destination markets" },
   { k: "96%", v: "First-attempt approvals" },
-  { k: "11 yrs", v: "Advisory practice" },
+  { k: "11 yrs", v: "International practice" },
 ];
 
 const TIMELINE = [
@@ -129,7 +129,7 @@ function AboutPage() {
           />
           <FadeIn delay={1100} duration={900}>
             <p className="wb-lead ab-hero-lead">
-              Your dream isn't. Westbrook Advisory exists to turn the life you're
+              Your dream isn't. Westbrook International exists to turn the life you're
               picturing — a new country, a bigger career, a family reunited — into
               a plan that actually works, legally and completely.
             </p>

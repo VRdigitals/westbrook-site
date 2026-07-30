@@ -11,13 +11,13 @@ import { SERVICES } from "@/data/services";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Services — Westbrook Advisory" },
+      { title: "Services — Westbrook International" },
       {
         name: "description",
         content:
           "Global recruitment, work and employer visas, student visas and family migration — four ways we turn a dream abroad into a real, working plan.",
       },
-      { property: "og:title", content: "Services — Westbrook Advisory" },
+      { property: "og:title", content: "Services — Westbrook International" },
       {
         property: "og:description",
         content:

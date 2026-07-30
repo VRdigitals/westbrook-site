@@ -17,9 +17,9 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ loaderData }) => {
     const title = loaderData
-      ? `${loaderData.title} — Westbrook Advisory`
-      : "Services — Westbrook Advisory";
-    const description = loaderData?.blurb ?? "Immigration and global recruitment advisory.";
+      ? `${loaderData.title} — Westbrook International`
+      : "Services — Westbrook International";
+    const description = loaderData?.blurb ?? "Immigration and global recruitment services.";
     return {
       meta: [
         { title },
@@ -58,7 +58,7 @@ function ServicePage() {
         <div className="sp-hero-in">
           <FadeIn delay={150} duration={700}>
             <p className="wb-eyebrow font-display">
-              Service {service.numeral} — Westbrook Advisory
+              Service {service.numeral} — Westbrook International
             </p>
           </FadeIn>
           <AnimatedHeading

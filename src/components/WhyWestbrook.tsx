@@ -202,7 +202,7 @@ export function WhyWestbrook() {
             delay={250}
           />
           <p className={`wb-subhead wb-reveal wb-reveal-delay${header.inView ? " is-in" : ""}`}>
-            We're not a broker chasing volume — we're the advisory that verifies every
+            We're not a broker chasing volume — we're the team that verifies every
             employer and every route long before we ever hand you a plan, so the future
             we promise is one we can actually deliver.
           </p>
