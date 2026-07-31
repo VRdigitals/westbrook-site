@@ -5,8 +5,7 @@ const pillars = [
     numeral: "I",
     title: "Your Dream, Done Right",
     tag: "Ethical",
-    description:
-      "Every route we build is honest and above board, so your new start begins on solid ground.",
+    description: "Every route we build is honest and above board.",
     orbit: 4,
     angle: 30,
   },
@@ -14,8 +13,7 @@ const pillars = [
     numeral: "II",
     title: "No Surprises, Ever",
     tag: "Transparent",
-    description:
-      "You'll always know where your case stands — clear timelines, honest costs, and a straight answer when you ask one.",
+    description: "Clear timelines, honest costs, straight answers.",
     orbit: 2,
     angle: 180,
   },
@@ -23,8 +21,7 @@ const pillars = [
     numeral: "III",
     title: "Done Right, The First Time",
     tag: "Compliance",
-    description:
-      "Every application is built to the destination country's exact standard and checked by licensed advisors before it's ever filed.",
+    description: "Built to standard and checked by licensed advisors.",
     orbit: 3,
     angle: 130,
   },
@@ -32,8 +29,7 @@ const pillars = [
     numeral: "IV",
     title: "A Network You Can Trust",
     tag: "Verified",
-    description:
-      "Every employer and partner is vetted, licensed and re-checked every year — so the opportunity waiting for you is real.",
+    description: "Every employer vetted, licensed and re-checked yearly.",
     orbit: 4,
     angle: 220,
   },
@@ -138,10 +134,10 @@ function CurvedOrbitText({ progress }: { progress: number }) {
     <svg className="wb-curved-svg" viewBox="0 0 720 720" aria-hidden>
       <defs>
         <linearGradient id="wb-curved-gold" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#8a5824" />
-          <stop offset="30%" stopColor="#f9dd7b" />
-          <stop offset="60%" stopColor="#edbc50" />
-          <stop offset="100%" stopColor="#f4bd50" />
+          <stop offset="0%" stopColor="#9c7a1e" />
+          <stop offset="30%" stopColor="#ffe066" />
+          <stop offset="60%" stopColor="#e8c53f" />
+          <stop offset="100%" stopColor="#ffd93d" />
         </linearGradient>
         {curvedRings.map((ring) => (
           <path key={ring.radius} id={`wb-ring-${ring.radius}`} d={ringPath(ring.radius)} />
@@ -202,9 +198,8 @@ export function WhyWestbrook() {
             delay={250}
           />
           <p className={`wb-subhead wb-reveal wb-reveal-delay${header.inView ? " is-in" : ""}`}>
-            We connect you with the right company, so your talent gets in front of the
-            right people, for the right opportunity — every employer and every route
-            verified long before we ever hand you a plan.
+            We connect you with the right company, so your talent reaches the
+            right people — every employer and route verified first.
           </p>
 
           <div className="wb-pillars">

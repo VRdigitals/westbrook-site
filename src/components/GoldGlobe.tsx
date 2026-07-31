@@ -35,7 +35,7 @@ function GlobeMarkers({ markers }: { markers: GlobeMarker[] }) {
           </mesh>
           <mesh>
             <sphereGeometry args={[0.062, 12, 12]} />
-            <meshBasicMaterial color="#f9dd7b" transparent opacity={0.35} />
+            <meshBasicMaterial color="#ffe066" transparent opacity={0.35} />
           </mesh>
         </group>
       ))}
@@ -59,7 +59,7 @@ function Globe({ markers }: { markers?: GlobeMarker[] }) {
         <meshStandardMaterial
           color="#3a2a12"
           emissiveMap={map}
-          emissive="#f4bd50"
+          emissive="#ffd93d"
           emissiveIntensity={0.85}
           metalness={0.4}
           roughness={0.6}
@@ -67,11 +67,11 @@ function Globe({ markers }: { markers?: GlobeMarker[] }) {
       </mesh>
       <mesh ref={wireRef}>
         <sphereGeometry args={[RADIUS + 0.006, 28, 18]} />
-        <meshBasicMaterial color="#f9dd7b" wireframe transparent opacity={0.14} />
+        <meshBasicMaterial color="#ffe066" wireframe transparent opacity={0.14} />
       </mesh>
       <mesh>
         <sphereGeometry args={[RADIUS + 0.14, 48, 48]} />
-        <meshBasicMaterial color="#f4bd50" transparent opacity={0.05} side={THREE.BackSide} />
+        <meshBasicMaterial color="#ffd93d" transparent opacity={0.05} side={THREE.BackSide} />
       </mesh>
       {markers && markers.length > 0 && <GlobeMarkers markers={markers} />}
     </>
@@ -84,7 +84,7 @@ export function GoldGlobe({ markers }: { markers?: GlobeMarker[] }) {
       <Canvas camera={{ position: [0, 0, 4.3], fov: 40 }} dpr={[1, 2]}>
         <ambientLight intensity={0.75} color="#fff3d1" />
         <pointLight position={[5, 3, 5]} intensity={8} color="#fff2c8" decay={2} />
-        <pointLight position={[-4, -2, -3]} intensity={3} color="#8a5824" decay={2} />
+        <pointLight position={[-4, -2, -3]} intensity={3} color="#9c7a1e" decay={2} />
         <Suspense fallback={null}>
           <Globe markers={markers} />
         </Suspense>

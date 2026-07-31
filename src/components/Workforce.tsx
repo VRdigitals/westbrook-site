@@ -11,7 +11,7 @@ const SECTORS: Sector[] = [
   {
     key: "Healthcare",
     intro:
-      "Clinical and paramedical talent placed into hospital groups and care networks that hold current licensing in their jurisdiction — with credential verification handled before a single interview.",
+      "Clinical talent placed into licensed hospital groups, verified before a single interview.",
     roles: [
       { title: "Registered Nurses", body: "Licence conversion, bridging programmes and placement into accredited hospital groups." },
       { title: "Paramedical Specialists", body: "Laboratory, radiology, pharmacy and physiotherapy support roles with recognised qualification mapping." },
@@ -22,7 +22,7 @@ const SECTORS: Sector[] = [
   {
     key: "Engineering & IT",
     intro:
-      "Senior technical professionals introduced to firms that can actually sponsor them — sponsorship capacity is confirmed before your CV is ever released.",
+      "Senior technical talent matched only to firms with confirmed sponsorship capacity.",
     roles: [
       { title: "Software & Cyber Specialists", body: "Developers, network and security engineers matched to sponsor-licensed technology firms." },
       { title: "Civil & Mechanical Engineers", body: "Project-based and permanent placements with chartered-body recognition guidance." },
@@ -32,7 +32,7 @@ const SECTORS: Sector[] = [
   {
     key: "Transport & Logistics",
     intro:
-      "Licensed drivers and supply-chain personnel supplied to freight operators, with international licence conversion mapped from day one.",
+      "Licensed drivers and supply-chain crews, with licence conversion mapped from day one.",
     roles: [
       { title: "Heavy Goods Drivers", body: "Category conversion, medical clearance and placement with established freight carriers." },
       { title: "Fleet & Operations", body: "Depot supervisors and fleet controllers for regulated transport networks." },
@@ -42,7 +42,7 @@ const SECTORS: Sector[] = [
   {
     key: "Technical Trades",
     intro:
-      "Certified tradespeople sourced against destination safety codes, so competence cards and site clearances are in place before arrival.",
+      "Certified tradespeople with safety cards and site clearances ready before arrival.",
     roles: [
       { title: "Certified Welders & Fabricators", body: "Coded welding and fabrication placements in construction and heavy engineering." },
       { title: "Plant & Industrial Operators", body: "Factory, plant and processing roles with documented safety accreditation." },
@@ -52,7 +52,7 @@ const SECTORS: Sector[] = [
   {
     key: "Industrial",
     intro:
-      "Volume workforce mobilisation handled end to end — sourcing, screening, contracts, visas and arrival logistics under one accountable team.",
+      "Volume workforce mobilisation handled end to end, under one accountable team.",
     roles: [
       { title: "Manufacturing & Production", body: "Machine operators, line staff and production supervisors at scale." },
       { title: "Construction & Site Crew", body: "Masons, general operatives and heavy equipment handlers for major projects." },

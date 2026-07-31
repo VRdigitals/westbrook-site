@@ -49,9 +49,8 @@ export function GlobalNetwork() {
             Pathways Opened.
           </h2>
           <p className="gn-sub">
-            Wherever your dream is waiting, we're already there — licensed partners,
-            employers and legal counsel across ten destinations, each placement
-            handled inside that country&rsquo;s own rules, properly.
+            Licensed partners and employers across ten destinations, each
+            placement handled inside that country&rsquo;s own rules.
           </p>
 
           <ul className="gn-flags">

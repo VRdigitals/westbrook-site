@@ -57,25 +57,18 @@ function Home() {
       <div className="relative z-10 flex h-full flex-col">
         <SiteNav />
 
-        <div className="flex flex-1 flex-col justify-end px-6 pb-12 md:px-12 lg:grid lg:grid-cols-2 lg:items-end lg:px-16 lg:pb-16">
-          <div className="max-w-3xl">
+        <div className="flex flex-1 flex-col justify-end px-6 pb-16 md:px-12 md:pb-20 lg:px-16 lg:pb-24">
+          <div className="max-w-2xl">
             <FadeIn delay={200} duration={800}>
-              <p className="mb-5 inline-block rounded-md bg-black/45 px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.4em] text-gold backdrop-blur-[2px] md:text-sm">
+              <p className="mb-6 inline-block rounded-md bg-black/45 px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.4em] text-gold backdrop-blur-[2px] md:text-sm">
                 Global Immigration &amp; Visa Experts
               </p>
             </FadeIn>
             <AnimatedHeading
               text={"We make your dream\ncome true."}
-              className="mb-5 font-display text-3xl font-semibold uppercase leading-[1.1] text-gold-light md:text-4xl lg:text-5xl xl:text-6xl"
+              className="mb-7 font-display text-3xl font-semibold uppercase leading-[1.1] text-gold-light md:text-4xl lg:text-5xl xl:text-6xl"
               letterSpacing="0.04em"
             />
-            <FadeIn delay={800} duration={1000}>
-              <p className="mb-7 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-                A new country, a better career, a family reunited — whatever your
-                version of &ldquo;there&rdquo; looks like, we build the real, working
-                path that gets you there.
-              </p>
-            </FadeIn>
             <FadeIn delay={1200} duration={1000}>
               <div className="flex flex-wrap gap-4">
                 <a href="#contact" className="bg-gold-gradient rounded-lg px-8 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-black transition-opacity hover:opacity-90">
@@ -84,16 +77,6 @@ function Home() {
                 <a href="#our-services" className="liquid-glass rounded-lg border border-gold/40 px-8 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-gold transition-colors hover:border-gold hover:text-gold-light">
                   Explore Your Options
                 </a>
-              </div>
-            </FadeIn>
-          </div>
-
-          <div className="mt-10 flex items-end justify-start lg:mt-0 lg:justify-end">
-            <FadeIn delay={1400} duration={1000}>
-              <div className="liquid-glass rounded-xl border border-gold/30 px-7 py-4">
-                <p className="text-gold-gradient font-display text-lg font-medium uppercase tracking-[0.25em] md:text-xl lg:text-2xl">
-                  Migrate. Work. Settle.
-                </p>
               </div>
             </FadeIn>
           </div>

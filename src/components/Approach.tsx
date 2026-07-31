@@ -1,9 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Typewriter } from "@/components/Typewriter";
 import { useInViewRef } from "@/components/useInViewRef";
-
-const VIDEO_URL =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4";
+import apMediaImage from "@/assets/ap-media.jpg";
 
 const POINTS = [
   { n: "01", t: "Assess", d: "Credentials read against real entry criteria." },
@@ -59,14 +57,7 @@ export function Approach() {
           ref={media.ref}
           className={`ap-media wb-reveal${media.inView ? " is-in" : ""}`}
         >
-          <video
-            className="ap-media-video"
-            src={VIDEO_URL}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+          <img className="ap-media-photo" src={apMediaImage} alt="" aria-hidden />
           <div className="ap-media-veil" aria-hidden />
         </div>
       </div>

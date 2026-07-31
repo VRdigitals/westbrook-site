@@ -26,7 +26,7 @@ export function ContactSection() {
   const [sending, setSending] = useState(false);
 
   return (
-    <section className="wb-sec" id="contact" style={{ background: "#08090c" }}>
+    <section className="wb-sec ct-sec" id="contact">
       <div className="wb-glow" aria-hidden />
       <div
         ref={head.ref}
@@ -36,7 +36,7 @@ export function ContactSection() {
         <ContactCard
           className="mt-6"
           title="Tell Us Your Dream. We'll Build The Plan."
-          description="Whether you're picturing a new country, a bigger career or your whole family together again, the first conversation costs nothing and commits you to nothing. You'll leave it knowing exactly what's possible."
+          description="A new country, a bigger career, your family together again — the first conversation costs nothing and commits you to nothing."
           contactInfo={[
             { icon: MailIcon, label: "Email", value: "info@westbrook.ae" },
             { icon: PhoneIcon, label: "Phone", value: "+971 54 165 9928" },
