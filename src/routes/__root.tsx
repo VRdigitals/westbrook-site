@@ -123,6 +123,16 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (location.protocol === "http:" && location.hostname === "westbrookinternational.ae") {
+                location.replace("https://" + location.hostname + location.pathname + location.search + location.hash);
+              }
+            `,
+          }}
+        />
         <HeadContent />
       </head>
       <body>
