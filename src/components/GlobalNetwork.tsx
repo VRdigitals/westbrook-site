@@ -1,17 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { GoldGlobe } from "@/components/GoldGlobe";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const COUNTRIES = [
-  { name: "United Arab Emirates", code: "ae" },
-  { name: "United Kingdom", code: "gb" },
-  { name: "Canada", code: "ca" },
-  { name: "Australia", code: "au" },
-  { name: "Germany", code: "de" },
-  { name: "Singapore", code: "sg" },
-  { name: "India", code: "in" },
-  { name: "Saudi Arabia", code: "sa" },
-  { name: "New Zealand", code: "nz" },
-  { name: "United States", code: "us" },
+  { name: "United Arab Emirates", code: "ae", lat: 23.4, lon: 53.8 },
+  { name: "United Kingdom", code: "gb", lat: 55.4, lon: -3.4 },
+  { name: "Canada", code: "ca", lat: 56.1, lon: -106.3 },
+  { name: "Australia", code: "au", lat: -25.3, lon: 133.8 },
+  { name: "Germany", code: "de", lat: 51.2, lon: 10.5 },
+  { name: "Singapore", code: "sg", lat: 1.35, lon: 103.8 },
+  { name: "India", code: "in", lat: 22.4, lon: 78.7 },
+  { name: "Saudi Arabia", code: "sa", lat: 23.9, lon: 45.1 },
+  { name: "New Zealand", code: "nz", lat: -41.5, lon: 173.0 },
+  { name: "United States", code: "us", lat: 39.8, lon: -98.6 },
 ];
 
 function useInView<T extends HTMLElement>() {
@@ -33,6 +34,7 @@ function useInView<T extends HTMLElement>() {
 export function GlobalNetwork() {
   const { ref, inView } = useInView<HTMLDivElement>();
   const [mounted, setMounted] = useState(false);
+  const isMobile = useIsMobile();
   useEffect(() => setMounted(true), []);
 
   return (
@@ -76,7 +78,9 @@ export function GlobalNetwork() {
         </div>
 
         <div className="gn-globe-wrap">
-          {mounted && <GoldGlobe />}
+          {mounted && (
+            <GoldGlobe markers={isMobile ? COUNTRIES : undefined} />
+          )}
           <p className="gn3d-hint font-display">Drag to explore</p>
         </div>
       </div>

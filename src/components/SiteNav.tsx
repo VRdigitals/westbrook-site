@@ -91,11 +91,63 @@ function ServicesNavItem() {
   );
 }
 
-export function SiteNav() {
+function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
-    <div className="px-6 pt-6 md:px-12 lg:px-16">
+    <div
+      className={`site-mobile-menu md:hidden${open ? " is-open" : ""}`}
+      aria-hidden={!open}
+    >
+      <div className="liquid-glass site-mobile-menu-panel rounded-xl border border-gold/15 p-3">
+        <a
+          href={LINKS[0].href}
+          onClick={onClose}
+          className="site-mobile-link font-display"
+        >
+          {LINKS[0].label}
+        </a>
+        <a href="/services" onClick={onClose} className="site-mobile-link font-display">
+          Services
+        </a>
+        {SERVICES.map((s) => (
+          <Link
+            key={s.slug}
+            to="/services/$slug"
+            params={{ slug: s.slug }}
+            onClick={onClose}
+            className="site-mobile-sublink font-display"
+          >
+            {s.title}
+          </Link>
+        ))}
+        {LINKS.slice(1).map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            onClick={onClose}
+            className="site-mobile-link font-display"
+          >
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="/#contact"
+          onClick={onClose}
+          className="bg-gold-gradient mt-2 block rounded-lg px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-black transition-opacity hover:opacity-90"
+        >
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export function SiteNav() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  return (
+    <div className="relative px-6 pt-6 md:px-12 lg:px-16">
       <nav className="liquid-glass site-nav-bar flex items-center justify-between rounded-xl px-5 py-3">
-        <Link to="/">
+        <Link to="/" onClick={() => setMobileOpen(false)}>
           <img
             src={logoUrl}
             alt="Westbrook International logo"
@@ -122,11 +174,23 @@ export function SiteNav() {
         </div>
         <a
           href="/#contact"
-          className="bg-gold-gradient rounded-lg px-6 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-black transition-opacity hover:opacity-90"
+          className="bg-gold-gradient hidden rounded-lg px-6 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-black transition-opacity hover:opacity-90 md:inline-block"
         >
           Book a Consultation
         </a>
+        <button
+          type="button"
+          className="site-nav-burger md:hidden"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </nav>
+      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </div>
   );
 }

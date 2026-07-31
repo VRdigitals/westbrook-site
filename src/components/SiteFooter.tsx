@@ -18,26 +18,6 @@ export function SiteFooter() {
             real, working plan — and help employers build the global teams
             they need.
           </p>
-          <div className="ft-social">
-            <a
-              href="https://www.instagram.com/westbrook.ae"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Westbrook International on Instagram"
-            >
-              <Instagram size={16} aria-hidden />
-              <span>westbrook.ae</span>
-            </a>
-            <a
-              href="https://www.facebook.com/share/195FJY9qRB/?mibextid=wwXIfr"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Westbrook International on Facebook"
-            >
-              <Facebook size={16} aria-hidden />
-              <span>westbrook.ae</span>
-            </a>
-          </div>
         </div>
         <div>
           <h5 className="font-display">Services</h5>
@@ -65,6 +45,29 @@ export function SiteFooter() {
             <br />
             Monday – Friday, 09:00 – 18:00 GST
           </p>
+        </div>
+        <div>
+          <h5 className="font-display">Follow Us</h5>
+          <div className="ft-social">
+            <a
+              href="https://www.instagram.com/westbrook.ae"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Westbrook International on Instagram"
+            >
+              <Instagram size={18} aria-hidden />
+              <span>westbrook.ae</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/195FJY9qRB/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Westbrook International on Facebook"
+            >
+              <Facebook size={18} aria-hidden />
+              <span>westbrook.ae</span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="ft-bottom">
