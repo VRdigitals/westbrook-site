@@ -51,7 +51,7 @@ function ServicePage() {
     <main className="w-full bg-[#0B0C10] text-white">
       {/* HERO */}
       <section className="sp-hero" key={service.slug}>
-        <img src={service.spotlightImage} alt={service.title} />
+        <img className="sp-hero-bg" src={service.spotlightImage} alt={service.title} />
         <div className="absolute inset-x-0 top-0 z-20">
           <SiteNav />
         </div>

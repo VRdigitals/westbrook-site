@@ -1716,7 +1716,7 @@
 
 /* ============ Service detail page ============ */
 .sp-hero { position: relative; min-height: 66vh; display: flex; align-items: flex-end; overflow: hidden; background: #000; }
-.sp-hero img {
+.sp-hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
