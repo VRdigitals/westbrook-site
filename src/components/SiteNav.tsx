@@ -94,7 +94,7 @@ function ServicesNavItem() {
 export function SiteNav() {
   return (
     <div className="px-6 pt-6 md:px-12 lg:px-16">
-      <nav className="liquid-glass flex items-center justify-between rounded-xl px-5 py-3">
+      <nav className="liquid-glass site-nav-bar flex items-center justify-between rounded-xl px-5 py-3">
         <Link to="/">
           <img
             src={logoUrl}

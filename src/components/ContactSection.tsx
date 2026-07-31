@@ -43,7 +43,7 @@ export function ContactSection() {
             {
               icon: ClockIcon,
               label: "Consultation Hours",
-              value: "Sunday – Thursday, 09:00 – 18:00 GST",
+              value: "Monday – Friday, 09:00 – 18:00 GST",
             },
             {
               icon: MapPinIcon,

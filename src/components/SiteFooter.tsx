@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Facebook, Instagram } from "lucide-react";
 import logoUrl from "@/assets/westbrook-logo-horizontal.png";
 import { SERVICES } from "@/data/services";
 
@@ -17,6 +18,26 @@ export function SiteFooter() {
             real, working plan — and help employers build the global teams
             they need.
           </p>
+          <div className="ft-social">
+            <a
+              href="https://www.instagram.com/westbrook.ae"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Westbrook International on Instagram"
+            >
+              <Instagram size={16} aria-hidden />
+              <span>westbrook.ae</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/195FJY9qRB/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Westbrook International on Facebook"
+            >
+              <Facebook size={16} aria-hidden />
+              <span>westbrook.ae</span>
+            </a>
+          </div>
         </div>
         <div>
           <h5 className="font-display">Services</h5>
@@ -35,11 +56,15 @@ export function SiteFooter() {
           <a href="/#contact">Contact</a>
         </div>
         <div>
-          <h5 className="font-display">Contact</h5>
+          <h5 className="font-display">Get In Touch</h5>
           <a href="mailto:info@westbrook.ae">info@westbrook.ae</a>
           <a href="tel:+971541659928">+971 54 165 9928</a>
           <p>Office 315, Healthcare City, Umm Hurrair, near Wafi Mall, Dubai</p>
-          <p>Sun – Thu, 09:00 – 18:00 GST</p>
+          <p className="mt-2">
+            <span className="ft-label">Consultation Hours</span>
+            <br />
+            Monday – Friday, 09:00 – 18:00 GST
+          </p>
         </div>
       </div>
       <div className="ft-bottom">

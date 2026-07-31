@@ -201,6 +201,11 @@
   overflow: hidden;
 }
 
+.site-nav-bar {
+  background: rgba(6, 7, 9, 0.78);
+  backdrop-filter: blur(14px);
+}
+
 .liquid-glass::before {
   content: "";
   position: absolute;
@@ -1568,6 +1573,13 @@
 .ft h5 { color: #f9dd7b; font-size: 0.74rem; letter-spacing: 0.24em; text-transform: uppercase; margin-bottom: 1rem; }
 .ft a, .ft p { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 2; display: block; }
 .ft a:hover { color: #edbc50; }
+.ft-label { color: rgba(255,255,255,0.85); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.ft-social { display: flex; gap: 1.25rem; margin-top: 1.25rem; }
+.ft-social a {
+  display: flex; align-items: center; gap: 0.45rem;
+  color: rgba(255,255,255,0.55); font-size: 0.85rem;
+}
+.ft-social a:hover { color: #edbc50; }
 .ft-bottom {
   max-width: 1200px; margin: 2.5rem auto 0; padding-top: 1.4rem;
   border-top: 1px solid rgba(255,255,255,0.08);
