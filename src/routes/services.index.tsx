@@ -51,13 +51,13 @@ function ServiceBlock({ service, index }: { service: (typeof SERVICES)[number]; 
       </div>
       <div className="svcs-copy">
         <p className="wb-eyebrow font-display">Service {service.numeral}</p>
-        <h3 className="font-display text-gold-gradient">{service.title}</h3>
+        <h3 className="svcs-title font-display">{service.title}</h3>
         <p className="svcs-blurb">{service.blurb}</p>
         <div className="svcs-pills">
-          {service.points.map((p) => (
+          {service.points.slice(0, 2).map((p) => (
             <span
               key={p}
-              className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 px-3.5 py-1.5 text-xs uppercase tracking-wider text-gold"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(201,154,46,0.4)] px-3.5 py-1.5 text-xs uppercase tracking-wider text-[#a8752e]"
             >
               {p}
             </span>
@@ -100,9 +100,7 @@ function ServicesIndexPage() {
           />
           <FadeIn delay={1100} duration={900}>
             <p className="wb-lead ab-hero-lead">
-              Whether you're picturing a new career, a classroom overseas, or your
-              whole family under one roof again — there's a service here built
-              around getting you there properly.
+              Four ways we turn your dream into a plan that works.
             </p>
           </FadeIn>
         </div>
@@ -110,8 +108,7 @@ function ServicesIndexPage() {
       </section>
 
       {/* SERVICE BLOCKS */}
-      <section className="wb-sec" style={{ paddingTop: "2rem" }}>
-        <div className="wb-glow" aria-hidden />
+      <section className="wb-sec svcs-sec" style={{ paddingTop: "2rem" }}>
         <div className="wb-sec-inner">
           {SERVICES.map((service, i) => (
             <ServiceBlock key={service.slug} service={service} index={i} />

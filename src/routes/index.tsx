@@ -39,13 +39,20 @@ function Home() {
   return (
     <main className="w-full bg-[#0B0C10] text-white">
       <section className="relative h-screen w-full overflow-hidden bg-black">
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
+      <div className="pointer-events-none absolute inset-0 h-full w-full overflow-hidden">
+        <iframe
+          className="absolute left-1/2 top-1/2 h-[62vw] min-h-[112%] w-[195vh] min-w-[112%] -translate-x-1/2 -translate-y-1/2"
+          src="https://www.youtube-nocookie.com/embed/u10sRtSVzik?autoplay=1&mute=1&loop=1&playlist=u10sRtSVzik&controls=0&showinfo=0&modestbranding=1&playsinline=1&rel=0&iv_load_policy=3&disablekb=1"
+          title="Westbrook International hero background video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+        />
+      </div>
+
+      {/* Mask any transient YouTube title/UI chrome at the very top */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 z-[5] h-24 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.4)_60%,rgba(0,0,0,0)_100%)]"
       />
 
       {/* Seamless blend into the pitch-black section below */}

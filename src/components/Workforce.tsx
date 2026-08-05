@@ -13,10 +13,8 @@ const SECTORS: Sector[] = [
     intro:
       "Clinical talent placed into licensed hospital groups, verified before a single interview.",
     roles: [
-      { title: "Registered Nurses", body: "Licence conversion, bridging programmes and placement into accredited hospital groups." },
-      { title: "Paramedical Specialists", body: "Laboratory, radiology, pharmacy and physiotherapy support roles with recognised qualification mapping." },
-      { title: "Healthcare Assistants", body: "Structured employer matching plus visa handling for direct patient-care staff." },
-      { title: "Clinical Support Teams", body: "Ward operations, sterilisation and records roles filled through compliant channels only." },
+      { title: "Registered Nurses", body: "Licence conversion and placement into accredited hospital groups." },
+      { title: "Paramedical Specialists", body: "Lab, radiology and physiotherapy roles with qualification mapping." },
     ],
   },
   {
@@ -24,9 +22,8 @@ const SECTORS: Sector[] = [
     intro:
       "Senior technical talent matched only to firms with confirmed sponsorship capacity.",
     roles: [
-      { title: "Software & Cyber Specialists", body: "Developers, network and security engineers matched to sponsor-licensed technology firms." },
-      { title: "Civil & Mechanical Engineers", body: "Project-based and permanent placements with chartered-body recognition guidance." },
-      { title: "Technical Programme Leads", body: "Senior delivery and operations leadership roles across infrastructure and energy." },
+      { title: "Software & Cyber Specialists", body: "Matched to sponsor-licensed technology firms." },
+      { title: "Civil & Mechanical Engineers", body: "Placements with chartered-body recognition guidance." },
     ],
   },
   {
@@ -34,9 +31,8 @@ const SECTORS: Sector[] = [
     intro:
       "Licensed drivers and supply-chain crews, with licence conversion mapped from day one.",
     roles: [
-      { title: "Heavy Goods Drivers", body: "Category conversion, medical clearance and placement with established freight carriers." },
-      { title: "Fleet & Operations", body: "Depot supervisors and fleet controllers for regulated transport networks." },
-      { title: "Warehouse & Supply Chain", body: "Distribution, inventory and coordination roles across export-driven economies." },
+      { title: "Heavy Goods Drivers", body: "Category conversion and placement with freight carriers." },
+      { title: "Fleet & Operations", body: "Depot supervisors and fleet controllers." },
     ],
   },
   {
@@ -44,9 +40,8 @@ const SECTORS: Sector[] = [
     intro:
       "Certified tradespeople with safety cards and site clearances ready before arrival.",
     roles: [
-      { title: "Certified Welders & Fabricators", body: "Coded welding and fabrication placements in construction and heavy engineering." },
-      { title: "Plant & Industrial Operators", body: "Factory, plant and processing roles with documented safety accreditation." },
-      { title: "Food Processing Specialists", body: "Trained butchery and processing personnel for regulated production facilities." },
+      { title: "Certified Welders & Fabricators", body: "Coded placements in construction and heavy engineering." },
+      { title: "Plant & Industrial Operators", body: "Factory and processing roles with safety accreditation." },
     ],
   },
   {
@@ -54,9 +49,8 @@ const SECTORS: Sector[] = [
     intro:
       "Volume workforce mobilisation handled end to end, under one accountable team.",
     roles: [
-      { title: "Manufacturing & Production", body: "Machine operators, line staff and production supervisors at scale." },
-      { title: "Construction & Site Crew", body: "Masons, general operatives and heavy equipment handlers for major projects." },
-      { title: "Facilities & Maintenance", body: "Cleaning, upkeep and building services teams recruited to written labour standards." },
+      { title: "Manufacturing & Production", body: "Machine operators and production supervisors at scale." },
+      { title: "Construction & Site Crew", body: "Masons and heavy equipment handlers for major projects." },
     ],
   },
 ];
@@ -67,11 +61,11 @@ export function Workforce() {
   const sector = SECTORS[active];
 
   return (
-    <section className="wb-sec" id="sectors" style={{ background: "#08090c" }}>
+    <section className="wb-sec wf-sec" id="sectors">
       <div className="wb-sec-inner">
         <div ref={head.ref} className={`wb-reveal${head.inView ? " is-in" : ""}`}>
           <p className="wb-eyebrow font-display">Skilled Workforce Placement</p>
-          <h2 className="wb-h2 font-display text-gold-gradient">
+          <h2 className="wb-h2 font-display">
             Sectors We Move People Into.
           </h2>
         </div>

@@ -37,22 +37,22 @@ const PILLARS = [
   {
     n: "01",
     title: "Your Dream, Done Right",
-    body: "Every route we build is honest and above board, so your new start begins on solid ground.",
+    body: "Honest and above board, start to finish.",
   },
   {
     n: "02",
     title: "Nothing Left To Chance",
-    body: "Your file leaves our desk only once every document, gap and question has already been answered.",
+    body: "Every document checked before it's filed.",
   },
   {
     n: "03",
     title: "Honest Numbers, Upfront",
-    body: "A written scope, timeline and fee before you pay a single dirham. Nothing invented later.",
+    body: "Scope, timeline and fee, before you pay.",
   },
   {
     n: "04",
     title: "One Person Who Knows Your Story",
-    body: "The same advisor from your first call to your arrival week — no handovers, no repeating yourself.",
+    body: "The same advisor, first call to arrival.",
   },
 ];
 
@@ -67,22 +67,22 @@ const TIMELINE = [
   {
     year: "2015",
     title: "One Office, One Promise",
-    body: "Started as a two-person practice in Dubai, rebuilding refused applications for healthcare professionals who'd been told no elsewhere.",
+    body: "Started in Dubai, rebuilding applications others had refused.",
   },
   {
     year: "2018",
     title: "Opening Doors For Employers Too",
-    body: "Hospitals and fabrication groups started asking us to find their people, not just process them — so we built an employer desk to match.",
+    body: "Built an employer desk to match talent, not just process it.",
   },
   {
     year: "2021",
     title: "More Dreams, More Destinations",
-    body: "Extended into student routes and skilled trades across the UK, Ireland, Canada and New Zealand.",
+    body: "Extended into student and skilled-trade routes across four countries.",
   },
   {
     year: "2026",
     title: "Eighteen Markets, One Team",
-    body: "A verified employer network spanning eighteen regulated destinations and four continents — still one advisor per story.",
+    body: "Eighteen regulated destinations — still one advisor per story.",
   },
 ];
 
@@ -129,9 +129,8 @@ function AboutPage() {
           />
           <FadeIn delay={1100} duration={900}>
             <p className="wb-lead ab-hero-lead">
-              Your dream isn't. Westbrook International exists to turn the life you're
-              picturing — a new country, a bigger career, a family reunited — into
-              a plan that actually works, legally and completely.
+              Your dream isn't. We turn the life you're picturing into a plan
+              that actually works.
             </p>
           </FadeIn>
         </div>
@@ -155,13 +154,12 @@ function AboutPage() {
       </section>
 
       {/* STORY */}
-      <section className="wb-sec ab-sec-black">
-        <div className="wb-glow" aria-hidden />
+      <section className="wb-sec ab-sec-light">
         <div className="wb-sec-inner" ref={headRef}>
           <p className="wb-eyebrow font-display">Our Story</p>
           <Typewriter
             text="Every Dream Deserves A Real Plan."
-            className="ab-h2 font-display text-gold-gradient"
+            className="ab-h2 font-display"
             start={headIn}
             speed={38}
             delay={120}
@@ -169,16 +167,14 @@ function AboutPage() {
           <div className="ab-story">
             <WordReveal
               className="wb-lead"
-              text="We began in a single Dubai office, rebuilding applications that other firms had rushed and refused people had almost given up on. That work taught us the only thing that really matters: someone's dream is only as good as the plan behind it."
+              text="We began in a single Dubai office, rebuilding applications refused people had almost given up on. A dream is only as good as the plan behind it."
               wordDelay={22}
             />
             <Reveal delay={140}>
               <p className="wb-lead">
-                A decade later the practice spans employers, skilled trades,
-                healthcare, study routes and family migration — but the promise
-                hasn't changed. We tell you the truth about what's possible, and
-                then we build it properly, so nothing stands between you and where
-                you're going.
+                A decade later we span employers, trades, healthcare and family
+                migration — same promise: the truth, then a plan that actually
+                works.
               </p>
             </Reveal>
           </div>
@@ -212,16 +208,16 @@ function AboutPage() {
       </section>
 
       {/* TIMELINE */}
-      <section className="wb-sec ab-sec-black">
+      <section className="wb-sec ab-sec-light">
         <div className="wb-sec-inner">
           <div className="wb-rule" style={{ marginBottom: "3rem" }} />
           <p className="wb-eyebrow font-display">The Path So Far</p>
-          <h2 className="ab-h2 font-display text-gold-gradient">Eleven Years Of Dreams Made Real.</h2>
+          <h2 className="ab-h2 font-display">Eleven Years Of Dreams Made Real.</h2>
           <ol className="ab-timeline">
             {TIMELINE.map((t, i) => (
               <Reveal key={t.year} delay={i * 110}>
                 <li className="ab-tl-item">
-                  <span className="ab-tl-year font-display text-gold-gradient">{t.year}</span>
+                  <span className="ab-tl-year font-display">{t.year}</span>
                   <div>
                     <h3 className="ab-tl-title font-display">{t.title}</h3>
                     <p className="ab-tl-body">{t.body}</p>
