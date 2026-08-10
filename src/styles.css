@@ -1497,6 +1497,9 @@
     margin: 0;
     z-index: 1;
   }
+  .ap-media-veil {
+    background: rgba(250, 248, 245, 0.8);
+  }
 }
 
 
