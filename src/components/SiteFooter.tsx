@@ -39,7 +39,7 @@ export function SiteFooter() {
           <h5 className="font-display">Get In Touch</h5>
           <a href="mailto:info@westbrook.ae">info@westbrook.ae</a>
           <a href="tel:+971541659928">+971 54 165 9928</a>
-          <p>Office 315, Healthcare City, Umm Hurrair, near Wafi Mall, Dubai</p>
+          <p>Al Shamsi Building, 2nd Floor 203, near Dubai Airport Terminal 2, Dubai</p>
           <p className="mt-2">
             <span className="ft-label">Consultation Hours</span>
             <br />

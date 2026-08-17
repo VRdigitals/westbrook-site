@@ -49,7 +49,7 @@ export function ContactSection() {
               icon: MapPinIcon,
               label: "Our Office",
               value:
-                "Office 315, Healthcare City, Umm Hurrair, near Wafi Mall, Dubai",
+                "Al Shamsi Building, 2nd Floor 203, near Dubai Airport Terminal 2, Dubai",
               className: "sm:col-span-2",
             },
           ]}
