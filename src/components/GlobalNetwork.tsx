@@ -13,6 +13,7 @@ const COUNTRIES = [
   { name: "Saudi Arabia", code: "sa", lat: 23.9, lon: 45.1 },
   { name: "New Zealand", code: "nz", lat: -41.5, lon: 173.0 },
   { name: "United States", code: "us", lat: 39.8, lon: -98.6 },
+  { name: "Norway", code: "no", lat: 60.5, lon: 8.5 },
 ];
 
 function useInView<T extends HTMLElement>() {
@@ -49,7 +50,7 @@ export function GlobalNetwork() {
             Pathways Opened.
           </h2>
           <p className="gn-sub">
-            Licensed partners and employers across ten destinations, each
+            Licensed partners and employers across eleven destinations, each
             placement handled inside that country&rsquo;s own rules.
           </p>
 

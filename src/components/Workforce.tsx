@@ -53,6 +53,16 @@ const SECTORS: Sector[] = [
       { title: "Construction & Site Crew", body: "Masons and heavy equipment handlers for major projects." },
     ],
   },
+  {
+    key: "Hospitality",
+    intro:
+      "Front-of-house and culinary talent placed into licensed hotels and resorts.",
+    roles: [
+      { title: "Chefs", body: "Kitchen brigade roles matched to qualification and cuisine specialism." },
+      { title: "Guest Relations Officers", body: "Front-desk and concierge placements with service-standard training." },
+      { title: "Floor Managers", body: "Operations oversight roles across hotel and dining floors." },
+    ],
+  },
 ];
 
 export function Workforce() {
